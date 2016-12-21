@@ -1,4 +1,4 @@
 angular.module('ninja', [
-    'ngCookies',
+    'ninja.najpopularniji',
     'ui.router'
 ]);
