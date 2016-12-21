@@ -3,6 +3,6 @@ angular
   .controller('NajpopularnijiCtrl', function($scope, $stateParams){
 
 
-
+console.log("najpopularnijiCtrl");
 
   });

@@ -1,4 +1,5 @@
 angular.module('ninja', [
     'ninja.najpopularniji',
-    'ui.router'
+    'ui.router',
+    'ngRoute'
 ]);

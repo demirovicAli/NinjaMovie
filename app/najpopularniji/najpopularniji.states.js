@@ -7,4 +7,4 @@ angular
                 templateUrl: 'app/najpopularniji/templates/najpopularniji.html',
                 controller: 'NajpopularnijiCtrl'
             });
-        });
+    });

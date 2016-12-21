@@ -1,1 +1,1 @@
-angular.module('ninja.najpopularniji', []);
+angular.module('ninja.najpopularniji', ['ui.router']);
