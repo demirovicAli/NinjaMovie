@@ -49,9 +49,12 @@ Za izradu ovog projekta možete koristiti otvoreni API koji nudi The Movie Datab
 
 03 prikaz filmova treba da ima sliku, naziv, godinu objave i prosječnu ocjenu. 
 
-********
+// gotovo ********
 
 04 napraviti listu serija, controlor, state, link na pocetnoj, 
+
+// gotovo  ******
+
 
 05 napraviti filtere >>> Iznad svake liste postoji filter po godini, po žanru i po ključnoj riječi
 
