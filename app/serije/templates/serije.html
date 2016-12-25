@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="col-sm-4 lista" ng-repeat="film in serije">
+        <h4>{{film.original_title}}</h4>
+        <img width="100%" ng-src="{{slikaURL}}{{film.poster_path}}">
+        <h4 class="datumObjave">{{film.first_air_date}}</h4><span class="brojLajkova">{{film.vote_count}}<img src="app/assets/img/like.png" alt=""></span>
+    </div>
+</div>

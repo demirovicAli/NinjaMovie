@@ -47,7 +47,9 @@ Za izradu ovog projekta možete koristiti otvoreni API koji nudi The Movie Datab
 02 dohvatiti najpopularnije sa APIja i prikazati ih 
 // gotovo **********************************************************)
 
-03 prikaz filmova treba da ima sliku, naziv, godinu objave i prosječnu ocjenu.
+03 prikaz filmova treba da ima sliku, naziv, godinu objave i prosječnu ocjenu. 
+
+********
 
 04 napraviti listu serija, controlor, state, link na pocetnoj, 
 

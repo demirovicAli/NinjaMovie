@@ -11,6 +11,7 @@
     .brojLajkova {
         float: right;
         padding: 5px;
+        color:blue;
     }
     
     .brojLajkova img {
@@ -18,4 +19,15 @@
         float: right;
         width: 20px;
         height: 20px;
+
     }
+
+.lista 
+{
+	padding: 20px;
+}
+
+.lista h4 {
+	font-size: 15px;
+	font-weight: bold;
+}
