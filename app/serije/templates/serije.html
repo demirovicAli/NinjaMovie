@@ -1,6 +1,17 @@
-<div class="container">
+<div class="col-sm-4">Filter By Date</div>
+<div class="col-sm-4">  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Zanrovi
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li ng-repeat="genre in genres"><a ng-click="getTvByGenre(genre.id)">{{genre.name}}</a></li>
+    </ul>
+  </div>
+</div></div>
+<div class="col-sm-4">Filter By KeyWord</div>
+
+<div class="container listaSerija">
     <div class="col-sm-4 lista" ng-repeat="film in serije">
-        <h4>{{film.original_title}}</h4>
+        <h4>{{film.name}}</h4>
         <img width="100%" ng-src="{{slikaURL}}{{film.poster_path}}">
         <h4 class="datumObjave">{{film.first_air_date}}</h4><span class="brojLajkova">{{film.vote_count}}<img src="app/assets/img/like.png" alt=""></span>
     </div>

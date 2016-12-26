@@ -2,7 +2,9 @@
         padding-top: 70px!important;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
-
+.listaSerija {
+     padding-top: 50px!important;
+}
  .datumObjave {
         float: left;
         font-size: 13px;
