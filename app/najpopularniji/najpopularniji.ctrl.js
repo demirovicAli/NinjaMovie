@@ -95,8 +95,9 @@ angular
         $scope.getMoviesByKeyword = function(pretraga) {
             najpopularnijiService.getListByKeyword(pretraga)
                 .then(function(pretraga) {
+                  if ($scope.pretraga.length>0){
                     $scope.najpopularniji = pretraga.results;
-                    console.log($scope.najpopularniji);
+                    console.log($scope.najpopularniji);}
                 });
         };
     });

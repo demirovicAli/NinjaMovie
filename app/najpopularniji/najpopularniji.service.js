@@ -27,9 +27,9 @@ angular.module('ninja.najpopularniji')
                     
                 });
         };
-
+        
        this.getListByKeyword = function(x) {
-            return $http.get('https://api.themoviedb.org/3/discover/movie?api_key=5f1e3fe7439c1c65345fc1ba307278c4&sort_by=popularity.desc&with_keywords=' + x)
+            return $http.get('http://api.themoviedb.org/3/search/movie?query='+x+'&api_key=5f1e3fe7439c1c65345fc1ba307278c4')
                 .then(function(response) {
                     console.log(x);
                     return response.data;
