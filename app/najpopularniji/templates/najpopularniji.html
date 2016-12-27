@@ -1,16 +1,19 @@
-<div class="col-sm-4">Filter By Date</div>
-<div class="col-sm-4">  <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Zanrovi
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li ng-repeat="genre in genres"><a ng-click="getMovieByGenre(genre.id)">{{genre.name}}</a></li>
-    </ul>
-  </div>
-</div></div>
-<div class="col-sm-4">Filter By KeyWord</div>
-
-
-
+<div class="col-sm-4">
+    <input class="form-control" id="ex2" type="text" placeholder="Filter po Godini (unesi godinu objave filma)" ng-model="godina" ng-blur="getMoviesByYear(godina)">
+</div>
+<div class="col-sm-4">
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Zanrovi
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li ng-repeat="genre in genres"><a ng-click="getMovieByGenre(genre.id)">{{genre.name}}</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="col-sm-4">
+    <input class="form-control" id="ex2" type="text" placeholder="pretraga po imenu" ng-model="pretraga" ng-blur="getMoviesByKeyword(pretraga)">
+</div>
 <div class="container listaSerija">
     <div class="col-sm-4 lista" ng-repeat="film in najpopularniji">
         <h4>{{film.original_title}}</h4>

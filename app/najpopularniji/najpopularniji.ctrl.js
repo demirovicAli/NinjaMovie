@@ -62,10 +62,10 @@ angular
         }];
 
 
-
+        $scope.godina = 0;
         $scope.slikaURL = IMG_URL;
         $scope.najpopularniji = [];
-
+        $scope.pretraga = "";
 
         najpopularnijiService.getMostPopular()
             .then(function(najpopularniji) {
@@ -76,13 +76,27 @@ angular
                 console.error(e);
             });
 
+        $scope.getMoviesByYear = function(x) {
+            najpopularnijiService.getListByYear(x)
+                .then(function(pozanru) {
+                    $scope.najpopularniji = pozanru.results;
+                    console.log($scope.najpopularniji);
+                });
 
+        };
         $scope.getMovieByGenre = function(zanr) {
             najpopularnijiService.getMovieByGenre(zanr)
                 .then(function(pozanru) {
                     $scope.najpopularniji = pozanru.results;
                     console.log($scope.najpopularniji);
                 });
+        };
 
+        $scope.getMoviesByKeyword = function(pretraga) {
+            najpopularnijiService.getListByKeyword(pretraga)
+                .then(function(pretraga) {
+                    $scope.najpopularniji = pretraga.results;
+                    console.log($scope.najpopularniji);
+                });
         };
     });
