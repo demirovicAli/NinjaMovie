@@ -38,3 +38,19 @@
     width: 100%;
     text-align: center;
 }
+
+.opisFilma {
+
+    border-bottom: 1px solid grey;
+    padding: 5px;
+}
+
+.listaZanrova {
+    display: inline-block;
+    float: left;
+
+    padding: 5px;
+
+    
+    border-bottom: 1px solid grey;
+}

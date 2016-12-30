@@ -1,6 +1,6 @@
 angular
     .module('ninja.najpopularniji')
-    .controller('NajpopularnijiCtrl', function($scope, $stateParams, najpopularnijiService, IMG_URL) {
+    .controller('NajpopularnijiCtrl', function($scope, $stateParams, najpopularnijiService, IMG_URL, $state) {
 
         $scope.genres = [{
             "id": 28,
@@ -100,4 +100,9 @@ angular
                     console.log($scope.najpopularniji);}
                 });
         };
+         $scope.open = function(film) {
+            $state.go('film', {
+              id: film.id
+            });
+          };
     });

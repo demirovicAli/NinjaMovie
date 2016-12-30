@@ -17,7 +17,7 @@
 <div class="container listaSerija">
     <div class="col-sm-4 lista" ng-repeat="film in najpopularniji">
         <h4>{{film.original_title}}</h4>
-        <img width="100%" ng-src="{{slikaURL}}{{film.poster_path}}">
-        <h4 class="datumObjave">{{film.release_date}}</h4><span class="brojLajkova">{{film.vote_count}}<img src="app/assets/img/like.png" alt=""></span>
+        <img width="100%" ng-src="{{slikaURL}}{{film.poster_path}}" ng-click="open(film)">
+        <h4 class="datumObjave">{{film.release_date}}</h4><span class="brojLajkova">{{film.vote_count}}<img src="app/assets/img/like.png" alt="" ng-click="getMovieByGenre(genre.id)></span>
     </div>
 </div>

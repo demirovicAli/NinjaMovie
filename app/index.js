@@ -3,4 +3,5 @@ angular.module('ninja', [
     'ninja.serije',
     'ui.router',
     'ngRoute'
+
 ]);

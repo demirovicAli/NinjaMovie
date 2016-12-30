@@ -1,0 +1,23 @@
+<div class="container">
+  <h2></h2>
+  <div class="panel panel-default">
+    <div class="panel-heading">{{film.original_title}}</div>
+    <div class="panel-body">
+
+
+
+    <div class="row">
+  <div class="col-sm-6">
+<br>
+<h4>{{film.original_title}}</h4>
+ <section class="opisFilma">{{film.overview}} <br></section> 
+ <br>
+Zanrovi:<section ng-repeat="genre in film.genres"> <span class="listaZanrova">{{genre.name}}&nbsp</span></section>
+<br>
+  </div>
+  <div class="col-sm-6"><img ng-src="{{slikaURL}}{{film.poster_path}}"></div>
+</div>
+			
+    </div>
+  </div>
+</div>

@@ -6,5 +6,13 @@ angular
                 url: '/najpopularniji',
                 templateUrl: 'app/najpopularniji/templates/najpopularniji.html',
                 controller: 'NajpopularnijiCtrl'
+            })
+            .state('film', {
+                url: '/film',
+                templateUrl: 'app/najpopularniji/templates/film.html',
+                controller: 'filmCtrl',
+                params: {
+                    id: null,
+                }
             });
     });
