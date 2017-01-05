@@ -1,0 +1,18 @@
+ <div class="card">
+
+<img class="card-img-top" ng-src="{{slikaURL}}{{serija.backdrop_path}}" alt=" ">
+  <div class="card-block">
+        <h4 class="card-title" style="color:#51A39D;">{{serija.original_title}}</h4>
+        <p class="card-text" style="width:70%;margin: auto;">{{serija.overview}} </p>
+    </div>
+    <ul class="list-group list-group-flush" style="width:70%;margin: auto;">
+        <li>
+            <ul ng-repeat="genre in serija.genres" style="float:left;"> <span style="float: left;padding: 3px;height: 20px;"><b>{{genre.name}}&nbsp</b></span></ul>
+        </li>
+        <li class="list-group-item" style="width:70%;margin: auto;">Release Date: <span style="color:#814374;">{{serija.first_air_date}}</span> , Average rating: <span style="color:#814374" ;>{{serija.vote_average}}</span></li>
+        <li class="list-group-item" style="width:70%;margin: auto;">Unmber of episodes: {{serija.number_of_episodes}}</li>
+    </ul>
+    <div class="card-block">
+        <a ui-sref="serije" class="card-link">Back</a>
+    </div>
+    </div>

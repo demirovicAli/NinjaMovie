@@ -1,23 +1,17 @@
-<div class="container">
-  <h2></h2>
-  <div class="panel panel-default">
-    <div class="panel-heading">{{film.original_title}}</div>
-    <div class="panel-body">
-
-
-
-    <div class="row">
-  <div class="col-sm-6">
-<br>
-<h4>{{film.original_title}}</h4>
- <section class="opisFilma">{{film.overview}} <br></section> 
- <br>
-Zanrovi:<section ng-repeat="genre in film.genres"> <span class="listaZanrova">{{genre.name}}&nbsp</span></section>
-<br>
-  </div>
-  <div class="col-sm-6"><img ng-src="{{slikaURL}}{{film.poster_path}}"></div>
-</div>
-			
+<div class="card">
+    <img class="card-img-top" ng-src="{{slikaURL}}{{film.poster_path}}" alt=" ">
+    <div class="card-block">
+        <h4 class="card-title" style="color:#51A39D;">{{film.original_title}}</h4>
+        <p class="card-text" style="width:70%;margin: auto;">{{film.overview}} </p>
     </div>
-  </div>
+    <ul class="list-group list-group-flush" style="width:70%;margin: auto;">
+        <li>
+            <ul ng-repeat="genre in film.genres" style="float:left;"> <span style="float: left;padding: 3px;height: 20px;"><b>{{genre.name}}&nbsp</b></span></ul>
+        </li>
+        <li class="list-group-item" style="width:70%;margin: auto;">Release Date: <span style="color:#814374;">{{film.release_date}}</span> , Average rating: <span style="color:#814374" ;>{{film.vote_average}}</span></li>
+        <li class="list-group-item" style="width:70%;margin: auto;">Run time: {{film.runtime}}m</li>
+    </ul>
+    <div class="card-block">
+        <a ui-sref="najpopularniji" class="card-link">Back</a>
+    </div>
 </div>
